@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>TODO</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        
+        <div class="row justify-content-md-center align-items-center" style="margin-top:3em">
+            
+            <div class="col col-lg-8" style="margin-bottom:3em">
+                <div class="input-group">
+                    <input type="text" id="task-name" class="form-control" placeholder="Task Name" aria-label="Task Name" aria-describedby="button-addon4">
+                    <div class="input-group-append" id="button-addon4">
+                        <button class="btn btn-primary" type="button" onclick="addNewTask()"><i class="fas fa-plus"></i></button>
+                        <button class="btn btn-danger" type="button" onclick="deleteCompleted()"><i class="far fa-trash-alt"></i></button>
+                        <button class="btn btn-info" type="button" onclick="sortTasks()"><i class="fas fa-sort-amount-down"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-lg-8" style="margin-bottom:3em">
+                <ul class="list-group" id="task-list">
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+<script type="text/javascript" src="script.js"></script>

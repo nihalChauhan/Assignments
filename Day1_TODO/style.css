@@ -1,0 +1,6 @@
+.fa-blank {
+    visibility:hidden !important;
+}
+.list-group-item-secondary {
+    text-decoration: line-through
+}
